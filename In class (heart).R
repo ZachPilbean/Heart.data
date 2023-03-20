@@ -54,7 +54,7 @@ head(data)
 #Compare prediction with actual results
 new=read_csv('Heart_validation.csv')
 head(new)
-new_x=new[c(1:3)]
+new_x=new[c(1:2)]
 new_x
 data.frame(new[c(3)], predict(MLR,newdata=new_x))
 
